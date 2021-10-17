@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPage">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="198dp"
+        android:layout_height="178dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184"
+        app:srcCompat="@drawable/gplogo" />
+
+    <Button
+        android:id="@+id/SLBttn"
+        android:layout_width="257dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="44dp"
+        android:background="#174A84"
+        android:backgroundTint="#174A84"
+        android:onClick="ShowMapLandmarks"
+        android:text="Show Landmarks"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ELbttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/ELbttn"
+        android:layout_width="257dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="36dp"
+        android:background="#174A84"
+        android:backgroundTint="#174A84"
+        android:onClick="goToEditLandmarksPage"
+        android:text="Edit Landmarks"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/UMBttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SLBttn" />
+
+    <Button
+        android:id="@+id/UMBttn"
+        android:layout_width="257dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="88dp"
+        android:onClick="goToUploadLandmarksPage"
+        android:text="Upload Map"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ELbttn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
